@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "8c7646ae-ecdf-403e-9679-d3f2d08cb8e9",
+		"name": "Node js Open AI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38706181"
+	},
+	"item": [
+		{
+			"name": "Image generate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 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",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"prompt\": \"A futuristic city skyline with flying cars, sunset lighting\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/generate-image",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"generate-image"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
